@@ -1,0 +1,39 @@
+{
+  "name": "iso-ieee754",
+  "description": "Read/write IEEE754 floating point numbers from/to a Buffer or array-like object",
+  "version": "1.1.13",
+  "author": {
+    "name": "Feross Aboukhadijeh",
+    "email": "feross@feross.org",
+    "url": "http://feross.org"
+  },
+  "contributors": [
+    "Romain Beauxis <toots@rastageeks.org>"
+  ],
+  "devDependencies": {
+    "airtap": "latest",
+    "standard": "latest",
+    "tape": "latest"
+  },
+  "keywords": [
+    "IEEE 754",
+    "buffer",
+    "convert",
+    "floating point",
+    "ieee754"
+  ],
+  "license": "BSD-3-Clause",
+  "main": "ieee754.node.js",
+  "module": "ieee754.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/isysd-mirror/iso-ieee754.git"
+  },
+  "homepage": "https://github.com/isysd-mirror/iso-ieee754/",
+  "scripts": {
+    "test": "npm run test-node && npm run test-browser",
+    "test-browser": "airtap -- test/*.js",
+    "test-browser-local": "airtap --local -- test/*.js",
+    "test-node": "tape test/*.js"
+  }
+}
